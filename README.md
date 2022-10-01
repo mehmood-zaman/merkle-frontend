@@ -1,36 +1,51 @@
-⚠️ _This content should be updated according to the project_
+# Merkle Frontend React Application
 
-## Details
+### Technologies used in this project
 
-## Setup
+1. React.js
+1. Redux.js
+1. Firebase
+1. Ant Design
+1. Styled-Components
+1. JavaScript
+1. Axios
+1. Docker
 
-1.  **Install dependencies.**
+### Deployment
 
-    Navigate into project directory and install all dependencies.
+For frontend React.js web application deployment i have used the firebase.
+[Merkle Live Preview](https://merkle-app.web.app/login).
 
-    ```shell
-    cd Merkle-frontend
-    npm install or yarn install
-    ```
+### Running Application Locally
 
-2.  **Open project.**
+change into the project root directory by running the "cd" command at your terminal
 
-    All set? Your project is now running at http://localhost:3000
+```
+cd merkle-frontend
+```
 
-3.  **Technologies used in project.**
+inside project directory run the command to install the dependencies.
 
-** React.js
-** Redux.js
-** Ant Design
-** Styled-components
-\*\* Axios
+```
+yarn install OR npm install
+```
 
-## Deployment
+after installing all the dependencies run the start command to start the application.
 
-### Second option:
+```
+yarn start OR npm start
+```
 
-Generate production build:
+### Running Docker Containers Development Environment
 
-```shell
-npm run build
+Run the following command to start the containerized application in development environment.
+
+```
+docker-compose -f docker-compose.dev.yml up
+```
+
+you can also run the command to start the containerized application in development environment.
+
+```
+yarn run docker-dev OR npm run docker-dev
 ```
