@@ -9,11 +9,15 @@ export function SearchMovies(data) {
     try {
       if (data)
         axios
-          .post("/api/v1/movies/search-movies", data, {
-            headers: {
-              "x-auth-token": token,
-            },
-          })
+          .post(
+            `${process.env.REACT_APP_API_BASE_URL}/api/v1/movies/search-movies`,
+            data,
+            {
+              headers: {
+                "x-auth-token": token,
+              },
+            }
+          )
           .then((res) => {
             if (res) {
               console.log(res);

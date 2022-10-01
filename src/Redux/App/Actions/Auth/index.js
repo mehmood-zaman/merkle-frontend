@@ -7,7 +7,7 @@ export function LoginAction(data, navigate) {
     dispatch(requestStart());
     try {
       axios
-        .post("/api/v1/auth/sign-in", data)
+        .post(`${process.env.REACT_APP_API_BASE_URL}/api/v1/auth/sign-in`, data)
         .then((res) => {
           if (res) {
             console.log(res);
@@ -20,10 +20,11 @@ export function LoginAction(data, navigate) {
           }
         })
         .catch((error) => {
+          dispatch(requestCompleted());
           notification.error({
-            message: error.response.data.meta.message,
+            message: error?.response?.data?.message,
           });
-          console.log(error);
+          console.log(error?.response?.data?.message);
         });
     } catch (error) {
       dispatch(requestCompleted());
