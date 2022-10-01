@@ -13,7 +13,7 @@
 
 ### Deployment
 
-For frontend React.js web application deployment i have used the firebase.
+For frontend React.js web application deployment i have used the firebase. You can view the production version of application on the following link.
 [Merkle Live Preview](https://merkle-app.web.app/login).
 
 ### Running Application Locally
