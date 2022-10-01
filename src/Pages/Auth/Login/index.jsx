@@ -3,7 +3,6 @@ import { Form, Input, Button, Row, Col } from "antd";
 import { LoginCard, LoginWrapper, FormWrapper } from "./styles";
 import { useNavigate } from "react-router-dom";
 import Logo from "Assets/Logos/LogoPrimary";
-import LoadingSpinner from "Components/Shared/LoadingSpinner";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginAction } from "Redux/App/Actions/Auth";
 import { loading as stateLoading } from "Redux/App";
@@ -63,13 +62,11 @@ const Login = () => {
 
             <Form.Item wrapperCol={{ span: 24 }}>
               <div style={{ textAlign: "center" }}>
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit" loading={loading}>
                   Login
                 </Button>
               </div>
             </Form.Item>
-
-            <div>{loading && <LoadingSpinner />}</div>
           </Form>
         </FormWrapper>
       </LoginCard>
