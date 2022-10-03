@@ -16,6 +16,11 @@
 For frontend React.js web application deployment i have used the firebase. You can view the production version of application on the following link.
 [Merkle Live Preview](https://merkle-app.web.app/login).
 
+```
+username:test@merkle
+password:12345678
+```
+
 ### Running Application Locally
 
 change into the project root directory by running the "cd" command at your terminal
